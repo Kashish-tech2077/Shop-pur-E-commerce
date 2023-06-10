@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact US- Shop-pur.com</title>
+  <link rel="shortcut icon" href="Images/Logo Image/newlogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <style>
+    .google-map{
+      width: 100%;
+      margin: auto;
+      border-radius: 2.5rem;
+      box-shadow: 0px 0px 20px 0px rgba(132, 144, 255, 0.37);;
+    }
+  </style>
+  <div class="top-header">
+    <div class="top-header-left">
+      <h4>24/7 Customer service <strong>1-800-234-5678</strong> </h4>
+    </div>
+    <div class="top-header-right">
+      <li>
+        <a href="#">Shipping & return</a>
+        <a href="#">Track Order</a>
+      </li>
+    </div>
+  </div>
+  <header class="header">
+    <div class="logo">
+      <img class="logo-img" src="Images/Logo Image/Logo.png" alt="Company Logo">
+    </div>
+    <nav class="navbar">
+      <ul class="navbar-lists">
+        <li><a class="navbar-link home-link" href="index.html">Home</a></li>
+        <li class="home-link-list"><a class="navbar-link home-link" href="#">Our Products</a><i
+            class="fa-solid fa-chevron-down" style="color: #2671f2;"></i>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="#">PCs and Laptop </a> <i class="fa-solid fa-laptop-code product-icon"
+                  style="color: #8490ff;"></i></li>
+              <li><a href="#">Televisions</a> <i class="fa-solid fa-tv product-icon" style="color: #8490ff;"></i></li>
+              <li><a href="#">Smart Phones</a> <i class="fa-solid fa-mobile product-icon" style="color: #8490ff;"></i>
+              </li>
+              <li><a href="#">Tablets</a> <i class="fa-solid fa-tablet product-icon" style="color: #8490ff;"></i> </li>
+              <li><a href="#">Smart Watches</a> <ion-icon name="watch-outline" class="product-icon"></ion-icon></li>
+              <li><a href="#">Home Appliances</a> <i class="fa-solid fa-radio product-icon"
+                  style="color: #8490ff;"></i></i> </li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="navbar-link about-link" href="about.html">About US</a></li>
+        <li><a class="navbar-link contact-link" href="contact.html">Contact US</a></li>
+        <li><a class="navbar-link services-link" href="services.html">Services</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section section">
+    <h1 class="common-heading">Contact US</h1>
+    <div class="contact-section-main">
+      <form action="https://formspree.io/f/xeqwbvea" method="POST">
+        <div class="grid grid-two-column">
+          <div>
+            <label for="username"></label>
+            <input type="text" name="username" id="username" placeholder="Username" required autocomplete="off" />
+          </div>
+          <div>
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="demo@email.com" required autocomplete="off" />
+          </div>
+        </div>
+        <div class="contact-form-data">
+          <label for="subject"></label>
+          <input type="text" name="subject" id="subject" placeholder="Subject" required autocomplete="off" />
+        </div>
+        <div class="contact-form-data">
+          <label for="textarea"></label>
+          <textarea name="textarea" id="textarea" cols="30" rows="10" required autocomplete="off"
+            minlength="15"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn">Send Message
+            <i class="fa-solid fa-angles-right" style="color: #4705e2;"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- section google maps -->
+
+  <section class="map-section section">
+    <h1 class="common-heading">
+      Reach Us!
+    </h1>
+    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.455443858257!2d80.34805957270764!3d26.4732768278315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c38a645603a8b%3A0x6f19ae5f63ac4fd5!2sZ%20Square%20Mall!5e0!3m2!1sen!2sin!4v1686335297165!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- ========================== 
+    Footer Section Starts Here
+  ================== -->
+
+  <footer class="footer-section section">
+    <div class="footer-container grid grid-four-column">
+      <div class="f-about">
+        <h3>About</h3>
+        <p>We have variety of products starting from Smart Phones to Laptop to Graphic Card to Home Appliances. Our
+          Quality products can also be available in our app from Google Play Store. Hope you like our products</p>
+      </div>
+
+      <div class="f-links">
+        <h3>Links</h3>
+        <ul>
+          <li> <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span> <a href="#">Home</a></li>
+          <li> <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span> <a href="#">About US</a></li>
+          <li> <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span> <a href="#">Contact US</a></li>
+          <li> <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span> <a href="#">Services</a></li>
+        </ul>
+      </div>
+
+      <div class="f-products">
+        <h3>Products</h3>
+        <ul>
+          <li> <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span> <a href="#">PCs & Laptop</a></li>
+          <li> <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span> <a href="#">Televisions</a></li>
+          <li> <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span> <a href="#">Smart Phones</a></li>
+          <li> <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span> <a href="#">Tablets</a></li>
+          <li> <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span> <a href="#">Smart Watches</a></li>
+          <li> <span> <ion-icon name="arrow-forward-outline"></ion-icon> </span> <a href="#">Home Appliances</a></li>
+        </ul>
+      </div>
+
+      <div class="f-address">
+        <h3>Address</h3>
+        <address>
+          <div>
+            <p>
+              <span>
+                <ion-icon name="location-outline"></ion-icon>
+              </span>
+              54-K Block, Dwarka Sector-3, New Delhi, India
+            </p>
+          </div>
+
+          <div>
+            <p>
+              <span>
+                <ion-icon name="call-outline"></ion-icon>
+              </span>
+              <a href="tel:+917318201422"> +91 9988776655</a>
+            </p>
+          </div>
+
+          <div>
+            <p>
+              <span>
+                <ion-icon name="mail-outline"></ion-icon>
+              </span>
+              <a href="mailto:info100@help.com">Shoppur@help.com</a>
+            </p>
+          </div>
+
+        </address>
+      </div>
+
+    </div>
+
+    <div class="social-icon-content">
+      <div class="f-social-icons">
+        <a href="#" target="_blank">
+          <ion-icon class="f-icon" name="logo-instagram"></ion-icon>
+        </a>
+
+        <a href="#" target="_blank">
+          <ion-icon class="f-icon" name="logo-facebook"></ion-icon>
+        </a>
+
+        <a href="#" target="_blank">
+          <ion-icon class="f-icon" name="logo-youtube"></ion-icon>
+        </a>
+      </div>
+
+      <div class="f-credits">
+        <p>
+          Copyright &copy; 2023 All rights reserved | This template is made with 🧡 by Kashish Pal
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://kit.fontawesome.com/3dd7962506.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+<script src="JS/script.js"></script
+</html>

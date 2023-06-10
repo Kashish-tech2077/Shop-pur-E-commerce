@@ -1,0 +1,1048 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  position: relative;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --heading-color: rgb(0, 10, 45);
+  --para-color: #777;
+  --white: #fff;
+  --dark-color: #212529;
+  --helper-color: #8490ff;
+  --dark-helper-color: #4705e2;
+  --helper-tint: #f3f4ff;
+  --dark-bg-color: #e6e6e6;
+  --icons-bg: rgba(144, 172, 208, 0.2);
+  --carrot-color: rgba(247, 181, 247, 0.514);
+  --dark-gradient-bg-color: linear-gradient(61deg,
+      rgb(255 0 255 / 11%),
+      rgb(0 27 129 / 49%));
+  --product-box-bg: linear-gradient(61deg,
+      rgba(245, 250, 255, 0.932),
+      rgba(251, 222, 255, 0.952));
+  --gradient-bg-color: linear-gradient(61deg,
+      rgba(255, 163, 255, 0.404),
+      rgba(199, 210, 255, 0.486));
+  --background-color: rgb(249, 249, 255);
+  --shadow: 0px 0px 20px 0px rgba(132, 144, 255, 0.37);
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: var(--heading-color);
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+p {
+  color: var(--para-color);
+  line-height: 1.6;
+  font-size: 1.7rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2.4px;
+  background-color: var(--helper-color);
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/*  =================
+Reusable code section
+ =================*/
+
+.common-heading {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: var(--heading-color);
+}
+
+.section {
+  max-width: 150rem;
+  margin: auto;
+  padding: 8rem 5.2rem;
+  max-width: 140rem;
+  margin: auto;
+}
+
+.container {
+  max-width: 140rem;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-two-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-four-column {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+  font-size: 1.8rem;
+  background-color: var(--background-color);
+  color: var(--dark-color);
+  padding: 1.5rem 1.7rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 2rem;
+  margin-left: 2rem;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  margin-top: 4rem;
+}
+
+/* Common Item Styling */
+
+#samsung-tablet-img {
+  width: 24rem;
+}
+
+.common-item-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 46rem;
+}
+
+.common-item-content .common-item-box {
+  width: 30rem;
+  background: var(--product-box-bg);
+  height: 44rem;
+  border: 1px solid #0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.common-item-content .common-item-box:hover,
+.common-item-content .common-item-box:active {
+  box-shadow: 0px 0px 1.2rem rgba(236, 131, 213, 0.925);
+  transform: translateY(-1rem);
+}
+
+.common-item-content .common-item-data {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0 1.2rem;
+  height: 16rem;
+}
+
+.common-item-img {
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.common-item-img img {
+  width: 30rem;
+}
+
+.common-item-price p {
+  font-weight: 600;
+  color: var(--dark-helper-color);
+}
+
+.common-item-description p {
+  height: 13rem;
+  margin-top: 0.5rem;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-button {
+  color: var(--white);
+}
+
+/*  =================
+Custom Image Styling 
+ =================*/
+
+#more-btn {
+  font-size: 2.3rem;
+  padding-left: 3.2rem;
+}
+
+.phone-section-image img {
+  width: 14rem;
+}
+
+.tablet-section-img img {
+  width: 15rem;
+}
+
+.s-watches-section-img img {
+  width: 15rem;
+}
+
+.tv-section-img img {
+  width: 20rem;
+}
+
+/* ==================
+Header Section Styling 
+ =================*/
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: var(--helper-color); */
+  background: url("../Images/Home\ Section/bg-r.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  padding: 1rem 4.8rem;
+}
+
+.top-header h4 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.top-header li a {
+  font-size: 1.5rem;
+  padding-left: 1.8rem;
+  color: var(--white);
+}
+
+.header {
+  background-color: var(--background-color);
+  padding: 0 4.8rem;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+
+.header .logo-img {
+  width: 7rem;
+  cursor: pointer;
+}
+
+.navbar .navbar-lists {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.7rem;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-transform: capitalize;
+  color: var(--dark-color);
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s linear;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: var(--helper-color);
+}
+
+.home-link-list {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-menu-1 {
+  display: none;
+  position: absolute;
+  width: 22rem;
+  background: var(--product-box-bg);
+  cursor: pointer;
+  border-radius: 2rem;
+  z-index: 5;
+  left: 0;
+  top: 3.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-link-list:hover .sub-menu-1 {
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-link-list:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
+}
+
+.home-link-list:hover .sub-menu-1 ul li {
+  width: 20rem;
+  padding: 1rem 0rem;
+  border-bottom: 1px dotted #fff;
+  background-color: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.fa-solid {
+  transition: all 0.3s ease-in-out;
+}
+
+.home-link-list .fa-solid {
+  margin-left: 5px;
+}
+
+.home-link-list:hover .fa-solid {
+  transform: translateY(0.4rem);
+}
+
+.product-icon {
+  text-align: right;
+  color: var(--helper-color);
+}
+
+/*  =================
+  Sticky Navbar Styling Starts Here
+ =================*/
+.sticky .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  box-shadow: var(--shadow);
+}
+
+.sticky .hero-section {
+  margin-top: 10rem;
+}
+
+/*  =================
+Header Section Styling Starts Here
+ =================*/
+
+.hero-section {
+  padding: 2rem 0;
+  background: url("../Images/Home\ Section/bg-r.jpg");
+  background-repeat: no-repeat;
+  /* z-index: 5888; */
+  background-size: cover;
+}
+
+.hero-full-content {
+  display: grid;
+  height: 48rem;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3.5rem;
+}
+
+.hero-content-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-heading {
+  margin-left: 2rem;
+  color: var(--white);
+  font-size: 5.5rem;
+}
+
+.hero-img {
+  max-width: 44rem;
+  height: 40rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-img:hover {
+  transform: scale(1.1);
+}
+
+.hero-full-content .watch-img {
+  height: 27rem;
+}
+
+.hero-full-content .gaming-mo-img {
+  height: 32rem;
+}
+
+.btn:hover {
+  color: var(--helper-color);
+  box-shadow: 0px 0px 3.5rem rgba(190, 182, 182, 0.616);
+}
+
+.btn:hover .hero-sec-icon,
+.btn:active .hero-sec-icon {
+  transform: translateX(1rem);
+}
+
+/*  =================
+Product Section Styling Starts Here
+ =================*/
+
+.product-section {
+  /* background: linear-gradient(61deg, rgb(255 0 255 / 11%), rgb(0 27 129 / 49%)); */
+  background: var(--dark-gradient-bg-color);
+}
+
+.product-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10rem 15rem;
+}
+
+.product-image {
+  width: 15rem;
+  position: relative;
+}
+
+.product-name {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--dark-color);
+  padding-top: 2rem;
+}
+
+.product-data {
+  background-color: var(--dark-bg-color);
+  border-radius: 50%;
+  width: 24rem;
+  height: 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-data:hover {
+  overflow: hidden;
+  border: 1px solid var(--dark-bg-color);
+  box-shadow: 0px 0px 4rem rgba(255, 4, 142, 0.404);
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+/*  =================
+Brand Section Styling Starts Here
+ =================*/
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500;
+  height: 25rem;
+  max-height: 100vh;
+  border-radius: 3.5rem;
+  margin: 0 1.8rem;
+}
+
+.brand-section-slider .brand-slide {
+  max-width: 30rem !important;
+}
+
+.brand-section-slider .brand-slide {
+  background: var(--gradient-bg-color);
+}
+
+.brand-section-slider .brand-slide img {
+  width: 30rem;
+}
+
+/*  =================
+Box-collection-1 Styling Starts Here
+ =================*/
+
+.box-collection-1 {
+  display: flex;
+  gap: 5rem 11rem;
+  padding-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-collection-image {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.box-collection-image:hover,
+.box-collection-image:active {
+  transform: scale(1.05);
+}
+
+/*  =================
+Trending Deal Styling Starts Here
+ =================*/
+
+.trending-deal-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 95rem;
+}
+
+.trending-deal-content .tr-deal-box {
+  width: 30rem;
+  background: var(--product-box-bg);
+  height: 44rem;
+  border: 1px solid #0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.trending-deal-content .tr-deal-box:hover,
+.trending-deal-content .tr-deal-box:active {
+  box-shadow: 0px 0px 1.2rem rgba(236, 131, 213, 0.925);
+  transform: translateY(-1rem);
+}
+
+.tr-deal-data {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0 1.2rem;
+  height: 16rem;
+}
+
+.tr-image {
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tr-deal-price p {
+  font-weight: 600;
+  color: var(--dark-helper-color);
+}
+
+.tr-deal-description p {
+  height: 13rem;
+  margin-top: 0.5rem;
+}
+
+.tr-image img {
+  width: 30rem;
+}
+
+.tr-image .oven-img {
+  width: 25rem;
+}
+
+.tr-image .washing-machine-img {
+  width: 14rem;
+}
+
+/*  =================
+Box-3-collection Styling Starts Here
+ =================*/
+
+.box-3-collection-section {
+  width: 100%;
+  background: var(--gradient-bg-color);
+}
+
+.box-3 {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.box-3 img {
+  border-radius: 2.5rem;
+}
+
+.box-3:hover,
+.box-3:active {
+  transform: scale(1.04);
+}
+
+.box-3-collection-content {
+  display: flex;
+  justify-content: center;
+  gap: 0rem 10rem;
+  width: 100%;
+}
+
+/*  =================
+Home Appliances Section Styling Starts Here
+ =================*/
+
+.home-appliances-section {
+  /* height: 20rem; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.home-appliances img {
+  width: 22rem;
+}
+
+.home-appliances-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  height: 46rem;
+}
+
+/*  =================
+PCs and Laptop Section Styling Starts Here
+ =================*/
+
+#processor-img {
+  width: 15rem;
+}
+
+.box-processor-section {
+  padding: 1.2rem 4.8rem;
+}
+
+.pc-laptop-section-img img {
+  width: 25rem;
+}
+
+.phone-image img {
+  width: 15rem;
+}
+
+/*  =================
+  Card Cashback Section Styling Starts Here
+  =================*/
+
+.card-cashback-section {
+  padding: 2rem 4.8rem;
+}
+
+/*  =================
+  Work Data Section Styling Starts Here
+   =================*/
+
+.work-data-section {
+  background: var(--heading-color);
+  text-align: center;
+  transition: all 0.7s ease-in-out;
+  color: var(--white);
+}
+
+.counter-numbers {
+  font-size: 4.2rem;
+}
+
+.work-data-section p {
+  text-transform: capitalize;
+  color: var(--white);
+}
+
+/*  =================
+  Box-TV Section Styling Starts Here
+   =================*/
+
+.box-tv-section {
+  background: var(--gradient-bg-color);
+}
+
+.box-tv-section .box-tv-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-tv-content-right img {
+  width: 70rem;
+  border-radius: 2.5rem;
+}
+
+.box-tv-data h2 {
+  font-size: 3.2rem;
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.box-heading h3 {
+  text-transform: uppercase;
+  color: var(--para-color);
+}
+
+.box-tv-content-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 0 3.4rem;
+}
+
+.box-tv-btn button {
+  margin-left: 0rem;
+}
+
+/*  =================
+    Feature Section Styling Starts Here
+  =================*/
+
+.features-section {
+  background-color: var(--background-color);
+}
+
+.features-section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 13rem;
+  gap: 1.8rem;
+  padding: 3.5rem;
+  margin: 17px 2.5px;
+  border: 0.5px solid var(--helper-color);
+  background-color: var(--white);
+  background: var(--product-box-bg);
+  border-radius: 2rem;
+}
+
+.feature-box-left .fa-solid {
+  font-size: 3rem;
+}
+
+.feature-box-subheading h4 {
+  color: var(--para-color);
+  font-weight: 200;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.1rem;
+}
+
+/*  =================
+    Testimonial Section Styling Starts Here
+  =================*/
+
+.testimonial-section .mySwiper-testimonial-section {
+  width: 100%;
+  height: 100%;
+  padding: 0 4.5rem;
+}
+
+.testimonial-section .swiper-slide-testimonial {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonial-section .swiper-slide-testimonial img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-testimonial-wrapper .swiper-client-msg {
+  padding: 5rem 8rem;
+  background: var(--white);
+  border-radius: 1rem;
+  position: relative;
+  text-align: center;
+  margin: 3rem 1rem;
+  box-shadow: var(--shadow);
+}
+
+.swiper-client-msg::before {
+  content: "";
+  position: absolute;
+  bottom: -8rem;
+  border: 4rem solid var(--helper-color);
+  left: 50%;
+  transform: translateX(-50%);
+  border-color: transparent;
+  border-top-color: var(--carrot-color);
+}
+
+.swiper-testimonial-wrapper .swiper-client-msg p::before {
+  content: "\f10d";
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--dark-helper-color);
+  font-family: "Font Awesome 6 Free";
+}
+
+.swiper-testimonial-wrapper .swiper-client-msg p::after {
+  content: "\f10e";
+  position: absolute;
+  bottom: 0;
+  right: 4rem;
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--dark-helper-color);
+  font-family: "Font Awesome 6 Free";
+}
+
+.swiper-testimonial-wrapper .swiper-client-data {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-testimonial-wrapper .swiper-client-data img {
+  max-width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  border: 0.5px solid var(--helper-color);
+}
+
+.swiper-client-data .client-data-details p:first-child {
+  color: var(--dark-color);
+  font-weight: 800;
+}
+
+.swiper-client-data .client-data-details p:last-child {
+  font-size: 1.4rem;
+}
+
+/*  =================
+    Contact US Section Styling Starts Here
+  =================*/
+
+.contact-section {
+  background: var(--gradient-bg-color);
+}
+
+.contact-section-main {
+  max-width: 70rem;
+  margin: auto;
+}
+
+.contact-section-main form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.contact-section-main input,
+.contact-section-main textarea {
+  padding: 1.5rem 2rem;
+  border: 0.1rem solid #c9c9c9;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-family: "Work Sans", sans-serif;
+  width: 100%;
+  line-height: 3rem;
+}
+
+.contact-section-main button {
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 2rem;
+  padding: 1.5rem 2.7rem;
+  margin: auto;
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.contact-section-main button:hover .fa-solid {
+  transform: translateX(1.07rem);
+}
+
+/*  =================
+Footer Section Styling Starts Here
+ =================*/
+
+.footer-section {
+  background: var(--heading-color);
+  transition: all 0.6s linear;
+}
+
+.footer-section h3 {
+  color: var(--white);
+  margin-bottom: 4rem;
+}
+
+.f-about p {
+  color: #adadad;
+}
+
+.f-links ul,
+.f-products ul,
+.f-address address {
+  display: flex;
+  justify-content: center;
+  gap: 1.7rem;
+  flex-direction: column;
+}
+
+.f-links li,
+.f-links a,
+.f-products li,
+.f-products a {
+  font-size: 1.8rem;
+  color: #adadad;
+}
+
+.f-links span,
+.f-products span {
+  margin-right: 0.8ren;
+}
+
+.f-address p,
+.f-address p a {
+  color: #adadad;
+  font-style: normal;
+}
+
+.footer-section a:hover,
+.footer-section a:active {
+  color: var(--white);
+}
+
+.f-social-icons {
+  margin: 5rem 0;
+  color: #adadad;
+  text-align: center;
+}
+
+.f-social-icons .f-icon {
+  width: 3.8rem;
+  height: 3.8rem;
+  display: inline-block;
+  background-color: var(--icons-bg);
+  padding: 1.4rem 1.5rem;
+  color: var(--white);
+  border-radius: 50%;
+  position: relative;
+}
+
+.f-credits p {
+  color: #adadad;
+  text-align: center;
+}
+
+/*  =================
+Scroll-Top Button  Styling Starts Here
+=================*/
+
+.scrolltop_btn {
+  position: fixed;
+  right: 3.5rem;
+  bottom: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-top {
+  width: 3rem;
+  height: 3.5rem;
+  background: var(--helper-color);
+  color: var(--white);
+  position: relative;
+  padding: 1.4rem 1.8rem;
+  display: inline-block;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.scrolltop_btn:hover .scroll-top {
+  transform: translateY(-1rem);
+  box-shadow: var(--shadow);
+}

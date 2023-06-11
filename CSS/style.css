@@ -106,6 +106,9 @@ Reusable code section
   color: var(--heading-color);
 }
 
+#custom-link::after{
+  content: none;
+}
 .section {
   max-width: 150rem;
   margin: auto;

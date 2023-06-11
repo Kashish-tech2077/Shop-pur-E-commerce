@@ -1,0 +1,133 @@
+/* smart-phone-section */
+
+:root {
+    --heading-color: rgb(0, 10, 45);
+    --para-color: #777;
+    --white: #fff;
+    --dark-color: #212529;
+    --helper-color: #8490ff;
+    --dark-helper-color: #4705e2;
+    --helper-tint: #f3f4ff;
+    --dark-bg-color: #e6e6e6;
+    --icons-bg: rgba(144, 172, 208, 0.2);
+    --carrot-color: rgba(247, 181, 247, 0.514);
+    --dark-gradient-bg-color: linear-gradient(61deg,
+            rgb(255 0 255 / 11%),
+            rgb(0 27 129 / 49%));
+    --product-box-bg: linear-gradient(61deg,
+            rgba(245, 250, 255, 0.932),
+            rgba(251, 222, 255, 0.952));
+    --gradient-bg-color: linear-gradient(61deg,
+            rgba(255, 163, 255, 0.404),
+            rgba(199, 210, 255, 0.486));
+    --background-color: rgb(249, 249, 255);
+    --shadow: 0px 0px 20px 0px rgba(132, 144, 255, 0.37);
+}
+
+.common-item-section {
+    display: flex;
+    width: 100%;
+    padding: 7rem 1.2rem;
+    position: relative;
+}
+
+.common-product-container {
+    width: 80%;
+    margin: 0rem 7rem;
+}
+
+.product-icon-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5rem;
+    height: auto;
+}
+
+.common-item-box-2 {
+    margin-bottom: 7rem;
+}
+
+.phone-section-image .one-plus-img {
+    width: 9rem;
+}
+
+.phone-section-image .asus-rog-img {
+    width: 9rem;
+}
+
+.phone-section-image .galaxy-s23-img {
+    width: 18rem;
+}
+
+.common-product-detail p {
+    margin-bottom: 4.5rem;
+    text-align: left;
+}
+
+.common-product-heading {
+    font-size: 6.5rem;
+    color: var(--dark-helper-color);
+}
+
+.Categories-sidebar {
+    position: sticky !important;
+    top: 70px;
+    left: 0;
+    /* display: inline-block */
+    background: var(--dark-helper-color);
+    /* color: var(--white); */
+    /* height: 30rem; */
+    color: white;
+    padding: 3rem;
+    border-radius: 2rem;
+    width: 20%;
+}
+
+.Categories-sidebar h3 {
+    font-size: 2.5rem;
+    margin-bottom: 8rem;
+}
+
+.categories-data {
+    color: #fff !important;
+    font-size: 2rem;
+    line-height: 5rem;
+}
+
+.categories-data a {
+    color: white;
+}
+
+
+/* home-appliances-section */
+
+.common-item-box-2 .home-appliances-section-image img{
+    width: 20rem;
+}
+
+/* Pcs-Laptop-section */
+.PCs-laptop-section-image img{
+    width: 22rem;
+}
+
+/* Smart Watch section */
+.smart-watch-section-image img{
+    width: 18rem;
+}
+
+/* Televisions section */
+.television-section-image img{
+    width: 22rem;
+}
+
+/* Tablet section */
+.tablets-section-image img{
+    width: 15rem;
+}
+.tablets-section-image .galaxy-tab-img{
+    width: 12rem;
+}
+

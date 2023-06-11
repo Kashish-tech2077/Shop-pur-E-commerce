@@ -206,6 +206,10 @@ Reusable code section
   font-weight: 600;
   color: var(--dark-helper-color);
 }
+.common-item-price s{
+  color: var(--para-color);
+  font-weight: 900;
+}
 
 .common-item-description p {
   height: 13rem;

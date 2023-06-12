@@ -104,30 +104,34 @@
 
 /* home-appliances-section */
 
-.common-item-box-2 .home-appliances-section-image img{
+.common-item-box-2 .home-appliances-section-image img {
     width: 20rem;
 }
 
+.common-item-box-2 .home-appliances-section-image .samsung-refigerator-img {
+    width: 12rem;
+}
+
 /* Pcs-Laptop-section */
-.PCs-laptop-section-image img{
+.PCs-laptop-section-image img {
     width: 22rem;
 }
 
 /* Smart Watch section */
-.smart-watch-section-image img{
+.smart-watch-section-image img {
     width: 16rem;
 }
 
 /* Televisions section */
-.television-section-image img{
+.television-section-image img {
     width: 22rem;
 }
 
 /* Tablet section */
-.tablets-section-image img{
+.tablets-section-image img {
     width: 15rem;
 }
-.tablets-section-image .galaxy-tab-img{
+
+.tablets-section-image .galaxy-tab-img {
     width: 12rem;
 }
-

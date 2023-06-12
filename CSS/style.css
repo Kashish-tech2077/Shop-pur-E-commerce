@@ -106,9 +106,10 @@ Reusable code section
   color: var(--heading-color);
 }
 
-#custom-link::after{
+#custom-link::after {
   content: none;
 }
+
 .section {
   max-width: 150rem;
   margin: auto;
@@ -137,16 +138,17 @@ Reusable code section
   grid-template-columns: repeat(4, 1fr);
 }
 
-#my-keen-slider{
+#my-keen-slider {
   border-radius: 2rem;
 }
 
-#secondary-header{
+#secondary-header {
   position: sticky;
   top: 0rem;
   left: 0rem;
   z-index: 999999;
 }
+
 .btn {
   font-size: 1.8rem;
   background-color: var(--background-color);
@@ -219,7 +221,8 @@ Reusable code section
   font-weight: 600;
   color: var(--dark-helper-color);
 }
-.common-item-price s{
+
+.common-item-price s {
   color: var(--para-color);
   font-weight: 900;
 }
@@ -690,9 +693,10 @@ Home Appliances Section Styling Starts Here
   height: 46rem;
 }
 
-.home-appliances .samsung-refigerator-img{
+.home-appliances .samsung-refigerator-img {
   width: 13rem;
 }
+
 /*  =================
 PCs and Laptop Section Styling Starts Here
  =================*/

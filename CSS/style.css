@@ -140,6 +140,13 @@ Reusable code section
 #my-keen-slider{
   border-radius: 2rem;
 }
+
+#secondary-header{
+  position: sticky;
+  top: 0rem;
+  left: 0rem;
+  z-index: 999999;
+}
 .btn {
   font-size: 1.8rem;
   background-color: var(--background-color);

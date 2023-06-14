@@ -7,6 +7,7 @@
     <title>About Us- Shop-pur.com</title>
     <link rel="shortcut icon" href="Images/Logo Image/newlogo.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.css" />
 </head>
@@ -24,30 +25,31 @@
             </li>
         </div>
     </div>
-    <header class="header" id="secondary-header">
+    <header class="header ">
         <div class="logo">
-            <a id="custom-link" href="index.html"><img class="logo-img" src="Images/Logo Image/Logo.png" alt="Company Logo"></a>
+            <a id="custom-link" href="index.html"><img class="logo-img" src="Images/Logo Image/Logo.png"
+                    alt="Company Logo"></a>
         </div>
         <nav class="navbar">
             <ul class="navbar-lists">
                 <li><a class="navbar-link about-link" href="index.html">Home</a></li>
                 <li class="home-link-list"><a class="navbar-link home-link" href="#">Our Products</a><i
-                        class="fa-solid fa-chevron-down" style="color: #2671f2;"></i>
+                        class="fa-solid fa-chevron-down"></i>
                     <div class="sub-menu-1">
                         <ul>
-                            <li><a href="Product Pages/PCs_Laptop.html">PCs and Laptop </a> <i class="fa-solid fa-laptop-code product-icon"
-                                    style="color: #8490ff;"></i></li>
-                            <li><a href="Product Pages/Televisions.html">Televisions</a> <i class="fa-solid fa-tv product-icon"
-                                    style="color: #8490ff;"></i></li>
-                            <li><a href="Product Pages/smart-phone.html">Smart Phones</a> <i class="fa-solid fa-mobile product-icon"
-                                    style="color: #8490ff;"></i>
+                            <li><a href="Product Pages/PCs_Laptop.html">PCs and Laptop </a> <i
+                                    class="fa-solid fa-laptop-code product-icon" style="color: #8490ff;"></i></li>
+                            <li><a href="Product Pages/Televisions.html">Televisions</a> <i
+                                    class="fa-solid fa-tv product-icon" style="color: #8490ff;"></i></li>
+                            <li><a href="Product Pages/smart-phone.html">Smart Phones</a> <i
+                                    class="fa-solid fa-mobile product-icon" style="color: #8490ff;"></i>
                             </li>
-                            <li><a href="Product Pages/Tablets.html">Tablets</a> <i class="fa-solid fa-tablet product-icon"
-                                    style="color: #8490ff;"></i> </li>
-                            <li><a href="Product Pages/Smart_watch.html">Smart Watches</a> <ion-icon name="watch-outline"
-                                    class="product-icon"></ion-icon></li>
-                            <li><a href="Product Pages/home_appliances.html">Home Appliances</a> <i class="fa-solid fa-radio product-icon"
-                                    style="color: #8490ff;"></i></i> </li>
+                            <li><a href="Product Pages/Tablets.html">Tablets</a> <i
+                                    class="fa-solid fa-tablet product-icon" style="color: #8490ff;"></i> </li>
+                            <li><a href="Product Pages/Smart_watch.html">Smart Watches</a> <ion-icon
+                                    name="watch-outline" class="product-icon"></ion-icon></li>
+                            <li><a href="Product Pages/home_appliances.html">Home Appliances</a> <i
+                                    class="fa-solid fa-radio product-icon" style="color: #8490ff;"></i></i> </li>
                         </ul>
                     </div>
                 </li>
@@ -56,6 +58,10 @@
                 <li><a class="navbar-link services-link" href="services.html">Services</a></li>
             </ul>
         </nav>
+        <div class="mobile-navbar-btn">
+            <ion-icon class="mobile-nav-icon" name="menu"></ion-icon>
+            <ion-icon class="mobile-nav-icon" name="close-circle"></ion-icon>
+        </div>
     </header>
 
 
@@ -63,7 +69,7 @@
         Our Milestones
     </h1>
     <section class="section work-data-section">
-        <div class="grid grid-four-column">
+        <div class="grid grid-four-column work-data-grid">
 
             <div>
                 <h2 class="counter-numbers" data-number="2000">0+</h2>
@@ -241,12 +247,13 @@
     <script src="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
 </body>
-<script src="JS/script_2.js"></script>
 <!-- <script src="node_modules/keen-slider/keen-slider.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/3dd7962506.js" crossorigin="anonymous"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- <script src="JS/script.js"></script> -->
+<script src="JS/script_2.js"></script>
 
 </html>

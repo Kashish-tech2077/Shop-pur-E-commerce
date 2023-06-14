@@ -8,13 +8,14 @@
   <title>Shop the Best Products- Shop-pur.com</title>
   <link rel="shortcut icon" href="Images/Logo Image/newlogo.png" type="image/x-icon">
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/responsive.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.css" />
 </head>
 
-<body class="sticky">
+<body>
   <!-- ===========
     Header Section Starts Here
     =============-->
@@ -30,17 +31,15 @@
       </li>
     </div>
   </div>
-  <header class="header">
+  <header class="header ">
     <div class="logo">
-      <a id="custom-link" href="index.html"><img class="logo-img" src="Images/Logo Image/Logo.png"
-          alt="Company Logo"></a>
-
+      <a id="custom-link" href="index.html"><img class="logo-img" src="Images/Logo Image/Logo.png" alt="Company Logo"></a>
     </div>
     <nav class="navbar">
       <ul class="navbar-lists">
         <li><a class="navbar-link about-link" href="index.html">Home</a></li>
         <li class="home-link-list"><a class="navbar-link home-link" href="#">Our Products</a><i
-            class="fa-solid fa-chevron-down" style="color: #2671f2;"></i>
+            class="fa-solid fa-chevron-down"></i>
           <div class="sub-menu-1">
             <ul>
               <li><a href="Product Pages/PCs_Laptop.html">PCs and Laptop </a> <i
@@ -64,6 +63,10 @@
         <li><a class="navbar-link services-link" href="services.html">Services</a></li>
       </ul>
     </nav>
+    <div class="mobile-navbar-btn">
+      <ion-icon class="mobile-nav-icon" name="menu"></ion-icon>
+      <ion-icon class="mobile-nav-icon" name="close-circle"></ion-icon>
+    </div>
   </header>
 
   <!-- ===========
@@ -428,16 +431,16 @@
   <section class="box-3-collection-section section">
     <div class="box-3-collection-content">
       <div class="box-3 box-3-collection-1">
-        <a href="Product Pages/smart-phone.html"><img src="Images/3 Boxes Images/mobile-phone-box.png"
+        <a id="custom-link" href="Product Pages/smart-phone.html"><img src="Images/3 Boxes Images/mobile-phone-box.png"
             alt="Smart-Phone Image"></a>
       </div>
       <div class="box-3 box-3-collection-2">
-        <a href="Product Pages/PCs_Laptop.html"><img src="Images/3 Boxes Images/graphic-card-box.png"
+        <a id="custom-link" href="Product Pages/PCs_Laptop.html"><img src="Images/3 Boxes Images/graphic-card-box.png"
             alt="Graphic-Card Image"></a>
       </div>
       <div class="box-3 box-3-collection-3">
-        <a href="Product Pages/home_appliances.html"><img src="Images/3 Boxes Images/oven-image-box.png"
-            alt="Oven Image"></a>
+        <a id="custom-link" href="Product Pages/home_appliances.html"><img
+            src="Images/3 Boxes Images/oven-image-box.png" alt="Oven Image"></a>
       </div>
     </div>
   </section>
@@ -857,7 +860,7 @@
     Our Work Counter Section Starts Here 
   ====================================-->
   <section class="section work-data-section">
-    <div class="grid grid-four-column">
+    <div class="grid grid-four-column work-data-grid">
 
       <div>
         <h2 class="counter-numbers" data-number="2000">0+</h2>
@@ -1175,7 +1178,7 @@
     <h1 class="common-heading">Contact US</h1>
     <div class="contact-section-main">
       <form action="https://formspree.io/f/xeqwbvea" method="POST">
-        <div class="grid grid-two-column">
+        <div class="grid form-two-column grid-two-column">
           <div>
             <label for="username"></label>
             <input type="text" name="username" id="username" placeholder="Username" required autocomplete="off" />

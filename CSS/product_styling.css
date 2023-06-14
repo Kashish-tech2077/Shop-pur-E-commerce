@@ -24,6 +24,18 @@
     --shadow: 0px 0px 20px 0px rgba(132, 144, 255, 0.37);
 }
 
+
+.mobile-navbar-btn .mobile-nav-icon {
+    font-size: 4rem;
+    color: var(--dark-helper-color);
+  }
+  .mobile-navbar-btn{
+    display: none;
+  }
+  
+  .mobile-navbar-btn .mobile-nav-icon[name="close-circle"] {
+    display: none;
+  }
 .common-item-section {
     display: flex;
     width: 100%;
@@ -79,7 +91,7 @@
     /* display: inline-block; */
     background: var(--dark-helper-color);
     /* color: var(--white); */
-    height: 60rem;
+    height: 50rem;
     color: white;
     padding: 3rem;
     border-radius: 2rem;

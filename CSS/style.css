@@ -11,10 +11,12 @@
 body {
   position: relative;
   height: 100%;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 :root {
@@ -101,25 +103,25 @@ Reusable code section
 
 .common-heading {
   font-size: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: left;
   color: var(--heading-color);
 }
 
 #custom-link::after {
   content: none;
+  display: none;
 }
 
 .section {
-  max-width: 150rem;
+  max-width: 155rem;
   margin: auto;
   padding: 8rem 5.2rem;
-  max-width: 140rem;
   margin: auto;
 }
 
 .container {
-  max-width: 140rem;
+  max-width: 155rem;
   margin: auto;
 }
 
@@ -318,6 +320,7 @@ Header Section Styling
 .navbar .navbar-lists {
   display: flex;
   gap: 2rem;
+  align-items: center;
   font-size: 1.7rem;
 }
 
@@ -339,10 +342,24 @@ Header Section Styling
 .home-link-list {
   position: relative;
   display: inline-block;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   transition: all 0.3s ease-in-out;
+  /* position: relative; */
 }
 
+.home-link-list a{
+  position: relative;
+}
+.home-link-list a::after{
+  content: "";
+  position: absolute;
+  height: 1rem;
+  bottom: 0rem;
+  left: 0rem;
+  width: 100%;
+  padding-bottom: 4rem;
+  background-color: transparent;
+}
 .sub-menu-1 {
   display: none;
   position: absolute;
@@ -390,6 +407,18 @@ Header Section Styling
 .product-icon {
   text-align: right;
   color: var(--helper-color);
+}
+
+.mobile-navbar-btn .mobile-nav-icon {
+  font-size: 4rem;
+  color: var(--dark-helper-color);
+}
+.mobile-navbar-btn{
+  display: none;
+}
+
+.mobile-navbar-btn .mobile-nav-icon[name="close-circle"] {
+  display: none;
 }
 
 /*  =================
@@ -555,10 +584,11 @@ Box-collection-1 Styling Starts Here
 
 .box-collection-1 {
   display: flex;
-  gap: 5rem 11rem;
+  /* gap: 5rem 11rem; */
+  margin: auto;
   padding-bottom: 2rem;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .box-collection-image {
@@ -648,6 +678,7 @@ Box-3-collection Styling Starts Here
 
 .box-3-collection-section {
   width: 100%;
+  border-radius: 2.5rem;
   background: var(--gradient-bg-color);
 }
 
@@ -667,8 +698,8 @@ Box-3-collection Styling Starts Here
 
 .box-3-collection-content {
   display: flex;
-  justify-content: center;
-  gap: 0rem 10rem;
+  justify-content: space-between;
+  /* gap: 0rem 10rem; */
   width: 100%;
 }
 
@@ -706,6 +737,9 @@ PCs and Laptop Section Styling Starts Here
 }
 
 .box-processor-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1.2rem 4.8rem;
 }
 
@@ -723,6 +757,9 @@ PCs and Laptop Section Styling Starts Here
 
 .card-cashback-section {
   padding: 2rem 4.8rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 /*  =================

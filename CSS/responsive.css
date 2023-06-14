@@ -1,0 +1,344 @@
+/* Desktop First Approach */
+@media (max-width:1320px) {
+    .section {
+        padding: 6rem 5.2rem;
+    }
+
+    .common-item-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+        margin: 0rem;
+    }
+
+    .common-item-content .common-item-box {
+        width: 30rem;
+        margin: 2rem 1rem;
+    }
+
+    .product-content {
+        gap: 5rem 4rem;
+    }
+
+    .product-data {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .product-image {
+        width: 11rem;
+    }
+
+    .box-collection-image {
+        width: 50rem;
+    }
+
+    .box-3-collection-content {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .box-processor-section img {
+        width: 55rem;
+    }
+
+    .card-cashback-section img {
+        width: 55rem;
+    }
+
+
+    .box-tv-content-right img {
+        width: 60rem;
+        border-radius: 2.5rem;
+    }
+}
+
+@media (max-width:1040px) {
+    .box-tv-section .box-tv-content {
+        flex-direction: column;
+    }
+
+    .box-collection-1 {
+        flex-direction: column;
+    }
+
+    .box-collection-1 img {
+        margin: 2rem 0rem;
+    }
+
+    .box-tv-content-left {
+        padding: 2rem 3.4rem;
+    }
+
+    .box-tv-content-right img {
+        width: 70rem;
+        border-radius: 2.5rem;
+    }
+
+    .box-3 img {
+        margin: 2rem 1rem;
+    }
+
+    .hero-full-content {
+        /* display: grid; */
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        /* grid-template-columns: 1fr 1fr; */
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3.5rem;
+    }
+
+    .hero-content-left {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content-right img {
+        width: 45rem;
+        height: auto;
+    }
+
+    /* Responsive Header Styling Starts Here */
+
+    /* .header .hamburger {
+        display: block;
+        font-size: 3.4rem;
+        cursor: pointer;
+    } */
+
+    .header {
+        position: relative;
+    }
+
+    .header .mobile-navbar-btn {
+        display: block;
+    }
+
+    .header .navbar {
+        /* display: none; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #4705e2;
+        height: 100vh;
+        /* background-color: yellow; */
+
+        /* Translating the navbar */
+        transform: translateX(100%);
+        transition: all 0.3s ease-in-out;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* z-index: 9999; */
+
+        /* Not displaying the navbar */
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .navbar .navbar-lists {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        gap: 4rem;
+        text-align: center;
+    }
+
+    .navbar-lists .navbar-link {
+        color: #fff !important;
+    }
+
+    /* Active class in the navbar */
+
+    .active .navbar {
+        /* position: relative; */
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0%);
+        z-index: 9999;
+    }
+
+    .mobile-navbar-btn {
+        /* position: relative; */
+        z-index: 99999;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-circle"] {
+        display: block;
+        color: #fff !important;
+        /* position: relative;
+        z-index: 999999999; */
+        /* background-color: yellow; */
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu"] {
+        display: none;
+    }
+}
+
+@media (max-width:750px) {
+    html {
+        font-size: 56.25%;
+        /* 1rem = 9px */
+    }
+
+    .section {
+        padding: 5rem 2rem;
+    }
+
+    .top-header {
+        justify-content: center;
+        flex-direction: column;
+        padding: 1rem 2.8rem;
+        align-items: center;
+    }
+
+    .top-header .top-header-left {
+        margin: 1rem 0rem;
+    }
+
+    .footer-container {
+        font-display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container .f-about {
+        grid-column: 1 / span 2;
+    }
+
+    .form-two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .box-tv-content-right img {
+        max-width: 50rem;
+        border-radius: 2.5rem;
+    }
+
+    .work-data-section .work-data-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box-collection-image {
+        max-width: 45rem;
+    }
+
+    /* .common-item-content .common-item-box {
+        width: 25rem;
+        height: 50rem;
+    }
+
+    .common-item-price p {
+        padding-top: 4.8rem;
+    }
+
+    .common-item-img {
+        height: 24rem;
+        display: inline-block;
+
+        /* justify-content: center;
+        align-items: center; */
+
+
+    .common-item-img img {
+        width: 25rem;
+    }
+
+    /* Custom Image Styling */
+    .tr-image .oven-img {
+        width: 20rem;
+    }
+
+    .swiper-testimonial-wrapper .swiper-client-data {
+        flex-direction: column;
+    }
+
+    .swiper-testimonial-wrapper .swiper-client-data {
+        margin: 3.4rem 0rem;
+    }
+}
+
+@media (max-width:500px) {
+    html {
+        font-size: 50%;
+        /* 1rem = 8px */
+    }
+
+    .box-3 img {
+        width: 32rem;
+    }
+
+    .hero-content-right img {
+        width: 40rem;
+        /* height: 30rem; */
+    }
+
+    .hero-heading {
+        margin-left: 0rem;
+        color: var(--white);
+        font-size: 5rem;
+    }
+
+    .footer-container .f-products,
+    .f-links {
+        padding-top: 2rem;
+    }
+
+    .box-tv-content-right img {
+        max-width: 37rem;
+    }
+
+    .hero-section {
+        padding: 5rem 0rem;
+    }
+    .brand-section-slider .brand-slide img {
+        width: 20rem;
+    
+    }
+    .box-collection-image {
+        max-width: 38rem;
+    }
+
+    .hero-content-right .watch-img{
+        width: 38rem;
+        height: 23rem;
+    }
+    .common-item-img img{
+        width: 24rem;
+    }
+    .common-item-box .phone-section-image img{
+        width: 16rem;
+    }
+    .common-item-box .tablet-section-img img{
+        width: 16rem;
+    }
+    .common-item-box .s-watches-section-img img{
+        width: 16rem;
+    }
+    #more-btn {
+        font-size: 2.3rem;
+        padding-left: 0rem;
+        display: block;
+        margin: 2rem 0rem;
+    }
+    .box-processor-section img {
+        width: 45rem;
+    }
+    .card-cashback-section img {
+        width: 45rem;
+    }
+}
+

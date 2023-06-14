@@ -1,3 +1,16 @@
+// Responsive Navbar
+const header = document.querySelector(".header");
+const nav_btn = document.querySelector(".mobile-navbar-btn");
+
+// Toggle Nav Function
+const togglenav = () => {
+  header.classList.toggle("active");
+};
+
+nav_btn.addEventListener("click", () => {
+  togglenav();
+});
+
 const hero_section = document.querySelector(".hero-section");
 
 // Creating a sticky navbar
@@ -66,23 +79,23 @@ let slider = new KeenSlider("#my-keen-slider", {
 // Testimonial Section Slider
 // ==================
 
-let swiper_3 = new Swiper(".mySwiper-testimonial-section", {
-  cssMode: true,
-  // grabCursor: true,
-  slidesPerView: 2,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  autoplay: {
-    delay: 3000,
-  },
-  loop: true,
+// let swiper_3 = new Swiper(".mySwiper-testimonial-section", {
+//   // cssMode: true,
+//   // grabCursor: true,
+//   slidesPerView: 1,
+//   spaceBetween: 30,
+//   pagination: {
+//     // el: ".swiper-pagination",
+//     // clickable: true,
+//   },
+//   autoplay: {
+//     // delay: 3000,
+//   },
+//   // loop: true,
 
-  mousewheel: true,
-  keyboard: true,
-});
+//   // mousewheel: true,
+//   // keyboard: true,
+// });
 
 // Scroll to top Button
 

@@ -145,7 +145,7 @@ Reusable code section
 }
 
 #secondary-header {
-  position: sticky;
+  position: sticky !important;
   top: 0rem;
   left: 0rem;
   z-index: 999999;

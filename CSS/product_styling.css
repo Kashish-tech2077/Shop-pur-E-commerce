@@ -65,15 +65,15 @@
 }
 
 .phone-section-image .one-plus-img {
-    width: 9rem;
+    width: 9rem !important;
 }
 
 .phone-section-image .asus-rog-img {
-    width: 9rem;
+    width: 9rem !important;
 }
 
 .phone-section-image .galaxy-s23-img {
-    width: 18rem;
+    width: 18rem !important;
 }
 
 .common-product-detail p {

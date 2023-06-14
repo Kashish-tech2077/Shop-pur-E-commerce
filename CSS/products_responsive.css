@@ -1,0 +1,30 @@
+@media (max-width:1320px) {
+    .Categories-sidebar {
+        display: none;
+    }
+
+    .common-item-section {
+        justify-content: center;
+    }
+
+    .common-product-container {
+        width: 80%;
+        margin: 0rem;
+    }
+
+}
+
+@media (max-width: 1020px) {
+    .product-icon-content {
+        width: 100%;
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 5rem;
+    }
+
+    .common-product-container {
+        width: 100% !important;
+        margin: 2rem 1.5rem !important;
+    }
+}

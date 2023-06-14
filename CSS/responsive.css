@@ -269,12 +269,13 @@
     .swiper-testimonial-wrapper .swiper-client-data {
         margin: 3.4rem 0rem;
     }
+
     .testimonial-section .mySwiper-testimonial-section {
         width: 100%;
         height: 100%;
         padding: 0 1.5rem;
-      }
-      
+    }
+
 }
 
 @media (max-width:500px) {
@@ -310,41 +311,49 @@
     .hero-section {
         padding: 5rem 0rem;
     }
+
     .brand-section-slider .brand-slide img {
         width: 20rem;
-    
+
     }
+
     .box-collection-image {
         max-width: 38rem;
     }
 
-    .hero-content-right .watch-img{
+    .hero-content-right .watch-img {
         width: 38rem;
         height: 23rem;
     }
-    .common-item-img img{
+
+    .common-item-img img {
         width: 24rem;
     }
-    .common-item-box .phone-section-image img{
+
+    .common-item-box .phone-section-image img {
         width: 16rem;
     }
-    .common-item-box .tablet-section-img img{
+
+    .common-item-box .tablet-section-img img {
         width: 16rem;
     }
-    .common-item-box .s-watches-section-img img{
+
+    .common-item-box .s-watches-section-img img {
         width: 16rem;
     }
+
     #more-btn {
         font-size: 2.3rem;
         padding-left: 0rem;
         display: block;
         margin: 2rem 0rem;
     }
+
     .box-processor-section img {
         width: 45rem;
     }
+
     .card-cashback-section img {
         width: 45rem;
     }
 }
-

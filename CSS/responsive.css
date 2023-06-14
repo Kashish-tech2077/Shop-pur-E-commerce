@@ -269,6 +269,12 @@
     .swiper-testimonial-wrapper .swiper-client-data {
         margin: 3.4rem 0rem;
     }
+    .testimonial-section .mySwiper-testimonial-section {
+        width: 100%;
+        height: 100%;
+        padding: 0 1.5rem;
+      }
+      
 }
 
 @media (max-width:500px) {

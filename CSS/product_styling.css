@@ -28,14 +28,16 @@
 .mobile-navbar-btn .mobile-nav-icon {
     font-size: 4rem;
     color: var(--dark-helper-color);
-  }
-  .mobile-navbar-btn{
+}
+
+.mobile-navbar-btn {
     display: none;
-  }
-  
-  .mobile-navbar-btn .mobile-nav-icon[name="close-circle"] {
+}
+
+.mobile-navbar-btn .mobile-nav-icon[name="close-circle"] {
     display: none;
-  }
+}
+
 .common-item-section {
     display: flex;
     width: 100%;

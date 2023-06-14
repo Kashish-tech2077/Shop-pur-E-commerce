@@ -347,10 +347,11 @@ Header Section Styling
   /* position: relative; */
 }
 
-.home-link-list a{
+.home-link-list a {
   position: relative;
 }
-.home-link-list a::after{
+
+.home-link-list a::after {
   content: "";
   position: absolute;
   height: 1rem;
@@ -360,6 +361,7 @@ Header Section Styling
   padding-bottom: 4rem;
   background-color: transparent;
 }
+
 .sub-menu-1 {
   display: none;
   position: absolute;
@@ -413,7 +415,8 @@ Header Section Styling
   font-size: 4rem;
   color: var(--dark-helper-color);
 }
-.mobile-navbar-btn{
+
+.mobile-navbar-btn {
   display: none;
 }
 
@@ -757,9 +760,9 @@ PCs and Laptop Section Styling Starts Here
 
 .card-cashback-section {
   padding: 2rem 4.8rem;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*  =================

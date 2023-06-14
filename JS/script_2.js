@@ -4,11 +4,11 @@ const nav_btn = document.querySelector(".mobile-navbar-btn");
 
 // Toggle Nav Function
 const togglenav = () => {
-  header.classList.toggle("active");
+    header.classList.toggle("active");
 };
 
 nav_btn.addEventListener("click", () => {
-  togglenav();
+    togglenav();
 });
 
 
@@ -62,7 +62,7 @@ let slider = new KeenSlider("#my-keen-slider", {
 let swiper_3 = new Swiper(".mySwiper-testimonial-section", {
     cssMode: true,
     // grabCursor: true,
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
     pagination: {
         el: ".swiper-pagination",

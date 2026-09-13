@@ -1,5 +1,7 @@
 # Shop-pur — E-commerce Website
 
+![Breezely Preview](https://github.com/user-attachments/assets/76318b8b-9e6a-43ef-a6fa-27b00f37cdb9)   
+
 A responsive multi-page e-commerce website frontend for browsing electronics and home-appliance categories.
 
 ## Live Demo
